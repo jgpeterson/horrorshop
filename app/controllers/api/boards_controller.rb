@@ -37,4 +37,17 @@ class Api::BoardsController < ApplicationController
 
         render json: @board 
     end
+
+    def destroy 
+
+        board_id = params[:id]
+
+        @board = Board.find_by_id(board_id)
+
+        @board.destroy
+
+        render json: {
+            msg: "Successfully Deleted"
+        }
+    end 
 end
