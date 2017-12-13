@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     get "/boards", to: "boards#index", as: "boards"
     post "/boards", to: "boards#create"
     get "/boards/:id", to: "boards#show", as: "board"
+    patch "/boards/:id", to: "boards#update"
   end 
 end

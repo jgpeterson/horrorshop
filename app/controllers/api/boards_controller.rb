@@ -24,4 +24,17 @@ class Api::BoardsController < ApplicationController
 
         render json: @board 
     end 
+
+    def update 
+
+        board_id = params[:id]
+
+        @board = Board.find_by_id(board_id)
+
+        board_params = params.require(:board).permit(:title, :description)
+
+        @board.update_attributes(board_params)
+
+        render json: @board 
+    end
 end
