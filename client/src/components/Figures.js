@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import axios from 'axios'
+import styled from 'styled-components'
 
 class Figures extends Component {
     state = {
@@ -11,28 +14,30 @@ class Figures extends Component {
 
     getAllFigures = async () => {
         const res = await axios.get('/api/figures')
-        this.setState({ discography: res.data })
+        this.setState({ figures: res.data })
     }
 
     render() {
 
-        const albums = this.state.discography.map((album) => {
+        const toys = this.state.figures.map((toy) => {
             return (
-                <FlexContainer>
+                
                 <div class="photo">
-                    <img src={album.name}/>
+                    <img src={toy.name}/>
                     <div>
-                    <a href={album.description}>Click Here to Purchase</a>
+                    <div>
+                    {toy.description}
+                    </div>
+                    <a href={toy.link}>Click Here to Purchase</a>
                     </div>
                 </div>
-                </FlexContainer>
+                
             )
         })
 
         return (
             <div>
-                <Header />
-                {albums}
+                {toys}
             </div>
         )
     }
