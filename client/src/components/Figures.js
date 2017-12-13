@@ -3,6 +3,16 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import styled from 'styled-components'
 
+
+const FlexContainer = styled.div`
+display: inline-block;
+text-align: center;
+padding: 40px;
+margin: 20px;
+min-width: 340px;
+max-width: 850px;
+`
+
 class Figures extends Component {
     state = {
         figures: [],
@@ -21,7 +31,7 @@ class Figures extends Component {
 
         const toys = this.state.figures.map((toy) => {
             return (
-                
+                <FlexContainer>
                 <div class="photo">
                     <img src={toy.name}/>
                     <div>
@@ -31,7 +41,7 @@ class Figures extends Component {
                     <a href={toy.link}>Click Here to Purchase</a>
                     </div>
                 </div>
-                
+                </FlexContainer>
             )
         })
 
