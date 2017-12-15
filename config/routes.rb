@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     post "/boards", to: "boards#create"
     get "/boards/:id", to: "boards#show", as: "board"
     patch "/boards/:id", to: "boards#update"
+    delete "/boards/:id", to: "boards#destroy"
   end 
 end
