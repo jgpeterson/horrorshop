@@ -17,6 +17,10 @@ class Boards extends Component {
         console.log(res.data)
         this.setState({boards: res.data})
       }
+      deleteBoard = async (boardId) => {        
+        const res = await axios.delete(`/api/boards/${boardId}`)
+        this.setState({boards: res.data})
+      }
       
       toggleShowNewForm = () => {
         this.setState({showNewForm: !this.state.showNewForm})
