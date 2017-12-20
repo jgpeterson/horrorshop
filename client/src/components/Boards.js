@@ -31,7 +31,7 @@ class Boards extends Component {
         return (
             
             <div class="name">
-                <div class="banner">
+                <div>
                 </div>
                {this.state.boards.map((board) => {
          return ( <div key={board.id}>

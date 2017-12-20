@@ -13,6 +13,9 @@ min-width: 340px;
 max-width: 850px;
 `
 
+const Back = styled.div`
+`
+
 class Figures extends Component {
     state = {
         figures: [],
@@ -31,6 +34,9 @@ class Figures extends Component {
 
         const toys = this.state.figures.map((toy) => {
             return (
+
+                
+                
                 <FlexContainer>
                 <div class="photo">
                     <img src={toy.name}/>
@@ -46,9 +52,12 @@ class Figures extends Component {
         })
 
         return (
+            <Back>
+                <Header />
             <div>
                 {toys}
             </div>
+            </Back>
         )
     }
 }
