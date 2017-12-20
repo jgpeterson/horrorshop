@@ -5,10 +5,9 @@ import styled from 'styled-components'
 import Header from './Header'
 
 const FlexContainer = styled.div`
-display: inline-block;
-text-align: center;
-padding: 40px;
-margin: 20px;
+
+
+
 min-width: 340px;
 max-width: 850px;
 `
@@ -41,7 +40,7 @@ class Figures extends Component {
                 <div class="photo">
                     <img src={toy.name}/>
                     <div>
-                    <div>
+                    <div class="text">
                     {toy.description}
                     </div>
                     <a href={toy.link}>Click Here to Purchase</a>
