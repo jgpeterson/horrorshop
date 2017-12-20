@@ -9,7 +9,7 @@ const FlexContainer = styled.div`
 
 
 min-width: 340px;
-max-width: 850px;
+max-width: 700px;
 `
 
 const Back = styled.div`
