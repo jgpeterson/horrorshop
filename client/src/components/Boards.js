@@ -29,7 +29,7 @@ class Boards extends Component {
     
     render() {
         return (
-            
+   
             <div class="name">
                 <div class="banner">
                 </div>
