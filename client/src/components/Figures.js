@@ -13,6 +13,8 @@ max-width: 700px;
 `
 
 const Back = styled.div`
+
+background-color: black;
 `
 
 class Figures extends Component {
