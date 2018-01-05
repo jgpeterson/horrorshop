@@ -32,6 +32,7 @@ class Boards extends Component {
    
             <div class="name">
                 <div class="banner">
+                <Header />
                 </div>
                {this.state.boards.map((board) => {
          return ( <div key={board.id}>
