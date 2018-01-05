@@ -23,3 +23,8 @@ body {
 .new {
   color: white;
 }
+
+.banner img {
+  margin-left: -27%;
+  margin-top: -20%;
+}

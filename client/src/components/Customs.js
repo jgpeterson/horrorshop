@@ -88,7 +88,7 @@ class Customs extends Component {
 
             <div class="name">
                 <div class="banner">
-                <img src="https://i.imgur.com/nRryQNF.jpg"/>
+                <img src="https://i.imgur.com/x9LozCP.jpg?1"/>
                 </div>
                {this.state.customs.map((custom) => {
          return ( <div key={custom.id}>
