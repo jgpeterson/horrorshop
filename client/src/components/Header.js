@@ -26,6 +26,9 @@ class Header extends Component {
             <div className="item">
               <Link to="/boards">Message Boards</Link>
             </div>
+            <div className="item">
+             <Link to="/customs">Custom Figures</Link>
+             </div>
             </div>
             </div>
             </Head>
