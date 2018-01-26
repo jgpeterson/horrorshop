@@ -20,8 +20,10 @@ text-align: center;
    max-width: 850px;
    `
 
+  
+
    const Back = styled.div`
-   background: black;
+   
    @media screen and (max-width:450px) {
     .banner img {
         font-size: 1.25rem;
@@ -88,7 +90,7 @@ class Customs extends Component {
 
             <div class="name">
                 <div class="banner">
-                <img src="https://i.imgur.com/x9LozCP.jpg?1"/>
+                
                 </div>
                {this.state.customs.map((custom) => {
          return ( <div key={custom.id}>
@@ -111,6 +113,7 @@ class Customs extends Component {
             </div>
             </Img>
             </Back>
+          
         );
     }
 }

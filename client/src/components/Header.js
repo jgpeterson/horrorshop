@@ -29,6 +29,9 @@ class Header extends Component {
             <div className="item">
              <Link to="/customs">Custom Figures</Link>
              </div>
+             <div className="item">
+             <Link to="/MainMenu">Main Menu</Link>
+             </div>
             </div>
             </div>
             </Head>
