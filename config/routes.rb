@@ -7,5 +7,6 @@ Rails.application.routes.draw do
     patch "/boards/:id", to: "boards#update"
     delete "/boards/:id", to: "boards#destroy"
     get "/trailers", to: "trailers#index", as: "trailers"
+    get "/customs", to: "customs#index", as: "customs"
   end 
 end
