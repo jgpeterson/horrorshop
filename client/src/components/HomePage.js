@@ -12,7 +12,7 @@ class HomePage extends Component {
             
             <div>
              <button>
-                  
+                  <Link to="/Trailers">ENTER</Link>
                  </button>
             </div>
         );
