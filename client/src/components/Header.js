@@ -30,7 +30,7 @@ class Header extends Component {
              <Link to="/customs">Custom Figures</Link>
              </div>
              <div className="item">
-             <Link to="/MainMenu">Main Menu</Link>
+             <Link to="/trailers">Trailers</Link>
              </div>
             </div>
             </div>

@@ -5,7 +5,7 @@ import Boards from './components/Boards'
 import NewBoardForm from './components/NewBoardForm'
 import HomePage from './components/HomePage'
 import Customs from './components/Customs'
-import MainMenu from './components/MainMenu'
+import Trailers from './components/Trailers'
 class App extends Component {
   render () {
     return (
@@ -16,7 +16,7 @@ class App extends Component {
             <Route exact path="/figures" component={Figures}/>
             <Route exact path="/boards" component={Boards}/>
             <Route exact path="/customs" component={Customs}/>
-            <Route exact path="/MainMenu" component={MainMenu}/>
+            <Route exact path="/trailers" component={Trailers}/>
           </Switch>
         </div>
       </Router>

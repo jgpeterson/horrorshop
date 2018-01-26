@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     get "/boards/:id", to: "boards#show", as: "board"
     patch "/boards/:id", to: "boards#update"
     delete "/boards/:id", to: "boards#destroy"
+    get "/trailers", to: "trailers#index", as: "trailers"
   end 
 end

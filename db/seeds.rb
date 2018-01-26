@@ -13,3 +13,7 @@ Custom.destroy_all
 
 Custom.create({name: "https://i.imgur.com/x9LozCP.jpg?1", description: "Custom one sixth scale RZ H1 Michael Myers figure by Ones Customs."})
 Custom.create({name: "https://i.imgur.com/ONLOpl9.jpg", description: "Custom one sixth scale remake Leatherface figure by Ones Customs."})
+
+Trailer.destroy_all
+
+Trailer.create({name: "https://www.youtube.com/embed/w_RVXwulsxw", description: "Friday The 13th - Teaser Trailer 2009"})
